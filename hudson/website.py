@@ -19,7 +19,7 @@ from . import config
 
 MODELS = {"persistence": "No change", "physics": "Mass balance", "ridge": "Linear (ridge)",
           "gbm": "Boosted trees", "hybrid": "Balance + trees"}
-REPO_URL = "https://github.com/HughFOD/hudson-flow"  # optional: paste your GitHub repo link here, e.g. "https://github.com/you/hudson-flow"
+REPO_URL = "https://github.com/HughFOD/hudson-flow-predictor"  # optional: paste your GitHub repo link here, e.g. "https://github.com/you/hudson-flow"
 
 
 def latest_run(out: Path) -> Path:

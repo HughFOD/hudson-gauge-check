@@ -1,6 +1,6 @@
 # Hudson River Mass Balance: Validating and Forecasting River Data with Physics + ML
 
-**Website: https://hughod.com/hudson-flow/**
+**Website: https://hughod.com/hudson-flow-predictor/**
 
 **Result:** on the real river (2022–2025), the checks found a year-long offset at one gauge (December 2022 to November 2023), and boosted trees forecast Green Island flow 12 hours ahead with 20% less error than "no change".
 
