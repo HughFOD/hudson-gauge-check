@@ -115,6 +115,7 @@ a{color:var(--river)}a:focus-visible,.btn:focus-visible{outline:2px solid var(--
 .narrow{max-width:44rem}
 /* hero */
 .hero{background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .wrap.home{display:block;padding-top:1.4rem;padding-bottom:0;font:500 .8rem/1 var(--mono);position:relative}.hero .home a{color:var(--hero-muted);text-decoration:none}.hero .home a:hover{color:var(--hero-ink);text-decoration:underline}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:3rem;align-items:center;padding-top:4.5rem;padding-bottom:4.5rem}
 .eyebrow{font:500 .78rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--signal)}
 h1{font:700 clamp(1.6rem,2.9vw,2.35rem)/1.18 var(--display);font-stretch:100%;letter-spacing:-.01em;margin:.9rem 0 1.2rem;text-wrap:balance}
@@ -279,12 +280,14 @@ def build(root: Path) -> Path:
 
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Hudson River Gauge Check</title>
+<title>Hudson River Gauge Check | Hugh O'Donnell</title>
 <meta name="description" content="A mass-balance check of three USGS streamflow gauges on the Hudson and Mohawk rivers, {yrs}, with machine-learning flow forecasts.">
+<link rel="canonical" href="https://hughod.com/hudson-gauge-check/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1d24'/%3E%3Cpath d='M4 13c4-4 8 4 12 0s8 4 12 0M4 21c4-4 8 4 12 0s8 4 12 0' fill='none' stroke='%233a9bb0' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet"><style>{CSS}</style></head><body>
 
-<header class="hero"><div class="ticks" aria-hidden="true"></div><div class="wrap">
+<header class="hero"><div class="ticks" aria-hidden="true"></div><div class="wrap home"><a href="https://hughod.com/">Hugh O'Donnell</a></div><div class="wrap">
   <div>
     <div class="eyebrow">Data validation · Hudson River, New York</div>
     <h1>Mass-Balance Validation of Streamflow Gauges at the Hudson–Mohawk Confluence</h1>
